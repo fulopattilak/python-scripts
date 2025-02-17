@@ -10,6 +10,7 @@ pd.options.display.float_format = '{:.0f}'.format
 
 # Creates the '%%sql' magic for pandas dataframes. Stores the query in 'sql.query' and the result in 'sql.result'.
 from IPython.core.magic import register_cell_magic
+from IPython import get_ipython
 class sql:
     def __init__(self):
         self.query = None
