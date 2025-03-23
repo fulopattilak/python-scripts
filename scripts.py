@@ -12,6 +12,13 @@ from IPython.core.magic import register_cell_magic
 from IPython import get_ipython
 
 class sql:
+    """
+    Retrives the output of the '%%sql' magic.
+
+    sql.result = The result of the query
+
+    sql.query = The query itself
+    """
     def __init__(self):
         self.query = None
         self.result = None
