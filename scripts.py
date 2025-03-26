@@ -4,7 +4,7 @@ from IPython.core.magic import register_cell_magic
 from IPython import get_ipython
 from pandasql import sqldf
 
-# Imports Pandas and sets display settings.
+# Sets Pandas display settings.
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -12,7 +12,7 @@ pd.set_option('display.max_colwidth', None)
 pd.options.display.float_format = '{:.0f}'.format
 # --------------------------------------------------------------------
 
-# Creates the '%%sql' magic for pandas dataframes. Stores the query in 'sql.query' and the result in 'sql.result'.
+# Creates the '%%sql' magic for dataframes. Stores the query in 'sql.query' and the result in 'sql.result'.
 
 class sql:
     """
